@@ -1,6 +1,6 @@
 # vue-template
 
-> y-vue-cli脚手架的模板
+> y-cli-vue脚手架的模板
 
 ## Build Setup
 
