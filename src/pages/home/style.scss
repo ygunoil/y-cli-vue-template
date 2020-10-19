@@ -1,0 +1,49 @@
+// @import "~@/lib/reset.scss";
+
+.router-link-active{
+   
+}
+
+.content{
+    position: relative;
+    p{
+        color: red;
+    }
+}
+.login{
+    width: 50vw;
+    height: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    h3{
+    margin: 3.333333vw 0 2.666667vw;
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: .18rem;
+    text-align: center;
+    }
+    button{
+        margin-left: 0.3rem;
+            padding: .266667rem;
+    padding: 2.666667vw;
+    min-width: 3.2rem;
+    min-width: 32vw;
+    border: none;
+    border-radius: .053333rem;
+    border-radius: .533333vw;
+    background-color: #56d176;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: inherit;
+    }
+    img{
+         width: 5.333333rem;
+    width: 53.333333vw;
+    }
+       
+}

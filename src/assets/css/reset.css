@@ -1,0 +1,117 @@
+
+body {
+    font-family: 'Microsoft YaHei', tahoma, arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;color: #333;font-size: 14px;
+    /*background: #fafafa*/
+}
+body,
+div,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+s {
+    margin: 0;
+    padding: 0;
+    /*2017-12-08 加*/
+    box-sizing: border-box;
+    font-weight: normal;
+}
+li {
+    list-style: none;
+}
+img {
+    display: inline-block;
+    border: none;
+}
+em {
+    font-style: normal;
+}
+a,
+a:focus,
+a:visited,
+a:link,
+a:hover {
+	outline: none;
+    text-decoration: none;
+}
+a{
+    color: #333;
+}
+a:hover{
+    color: #ff6b00;
+}
+
+i {
+    vertical-align: middle;
+    font-style: normal;
+}
+i,
+label,
+input[type='checkbox'] {
+    vertical-align: middle;
+}
+input{
+    padding: 10px;
+}
+label {
+    font-weight: normal;
+}
+textarea{
+    resize: none!important;
+} 
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+   color: #999;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+   color: #999;
+}
+input::-moz-placeholder, textarea::-moz-placeholder{
+   color: #999;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+   color: #999;
+}
+
+ /* 关键字标红 */
+.keyword-highlight {
+    color: #FF5050 !important;
+    font-weight: normal;
+}
+
+/* 可以设置不同的进入和离开动画 */
+/* 动画时间 */
+#app .fade-enter-active,#app .fade-leave-active {
+  transition: all .5s ease
+}
+/* 进入默认位置 */
+#app .fade-enter{
+    opacity: 0;
+    transform: translate(25%,-50%);
+}
+#app .fade-leave-to{
+    opacity: 0;
+    transform: translate(-125%,-50%);
+    
+}

@@ -1,0 +1,277 @@
+// 定义变量
+$mColor: #ff6b00;
+$white: #fff;
+$tColor: #333;
+$pinkColor: #FFD6B8;
+// 字体
+@mixin f-size($size: 14px) {
+    font-size: $size;
+    line-height: $size;
+}
+
+// 对齐方式
+@mixin t-align($align: center) {
+    text-align: $align;
+}
+
+// 边框
+@mixin border($col: #E6E6E6, $num: 1px, $solid: solid) {
+    border: $num $solid $col;
+}
+
+// 按钮
+@mixin btn($height: 36px, $font: 14px, $padding: 18px, $color: $white, $background: $mColor, $num: 0, $border: $mColor, $radius:4px) {
+    height: $height;
+    line-height: $height;
+    font-size: $font;
+    padding: 0 $padding;
+    color: $color;
+    background: $background;
+    border: $num solid $border;
+    display: inline-block;
+    border-radius: $radius;
+    box-sizing: border-box;
+}
+
+// 定位
+@mixin location($type: relative) {
+    position: $type;
+}
+
+// 鼠标指针样式
+@mixin mouse($type: pointer) {
+    cursor: $type;
+}
+
+// 省略
+@mixin el-sl($num) {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $num;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+// 间距
+@mixin m-step($direction: bottom, $num: 20px) {
+    margin-#{$direction}: $num;
+}
+
+@mixin p-step($direction: bottom, $num: 20px) {
+    padding-#{$direction}: $num;
+}
+
+// 透明度
+@mixin opacity($num: 0.5) {
+    opacity: $num;
+}
+
+// 清除浮动 不通用
+// .clear{
+// 	overflow: hidden;
+// }
+// 万能清除浮动
+.clear:after,
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+// 强制换行
+.change-wrap {
+    word-wrap: break-word;
+}
+
+// 主体块
+.container {
+    width: 1160px !important;
+    margin: 0 auto;
+    padding: 0;
+}
+
+// 字体颜色
+.orange {
+    color: $mColor;
+}
+
+.white {
+    color: $white;
+}
+
+.gray3 {
+    color: #333;
+}
+
+.gray6 {
+    color: #666;
+}
+
+.gray9 {
+    color: #999;
+}
+
+// 背景颜色
+.bg-orange {
+    background: #ff6b00;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+// 省略
+.el-sl {
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// 浮动
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+// 字体
+.f12 {
+    font-size: 12px !important;
+}
+
+.f14 {
+    font-size: 14px !important;
+}
+
+.f16 {
+    font-size: 16px !important;
+}
+
+.f18 {
+    font-size: 18px !important;
+}
+
+.f20 {
+    font-size: 20px !important;
+}
+
+// 间距
+.m-l-20 {
+    margin-left: 20px!important;
+}
+
+.m-b-0 {
+    margin-bottom: 0px !important;
+}
+
+.m-b-10 {
+    margin-bottom: 10px !important;
+}
+
+.m-b-20 {
+    margin-bottom: 20px !important;
+}
+
+.m-t-40 {
+    margin-top: 40px !important;
+}
+
+.m-r-40 {
+    margin-right: 40px !important;
+}
+
+.p-t-40 {
+    padding-top: 40px !important;
+}
+
+.p-t-20 {
+    padding-top: 20px !important;
+}
+
+// 对齐方式
+.t-c {
+    text-align: center !important;
+}
+
+.t-l {
+    text-align: left !important;
+}
+
+.t-r {
+    text-align: right !important;
+}
+
+// 鼠标指针样式
+.c-p {
+    cursor: pointer;
+}
+
+.c-d {
+    cursor: default;
+}
+
+// 定位
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.hide {
+    display: none!important;
+}
+
+// 暂无数据
+.empty-prompt {
+    .icon-box {
+        margin-bottom: 20px;
+        .icon {
+            font-size: 120px;
+            color: #f0f0f0;
+        }
+    }
+}
+
+// 分页
+.paging-box {
+    width: 100%;
+    position: relative;
+    padding: 50px 0 80px;
+    .paging-count-box {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+// 行高
+.l-h-30 {
+    line-height: 30px;
+}
+
+.l-h-20 {
+    line-height: 20px;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.drop-down {
+    transform: rotateZ(90deg);
+}
+.change-newline {
+    word-break:break-all;
+}
